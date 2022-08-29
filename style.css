@@ -1,0 +1,310 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  min-width: 144rem;
+  margin: 0 auto;
+  position: relative;
+}
+
+/*Section -Hero landing page*/
+/*---------------------------------------------------------------*/
+.hero {
+  display: grid;
+  /* max-height: 60rem; */
+  min-height: 60rem;
+}
+
+.mobile-mode {
+  display: none;
+}
+.grid-row-1 {
+  background-image: url(./images/desktop/image-header.jpg);
+  background-size: cover;
+  background-position: center;
+  color: hsl(0, 0%, 100%);
+}
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.2rem;
+  padding: 0 4.8rem;
+}
+.nav-logo {
+  font-size: 4.8rem;
+  font-weight: bolder;
+  font-family: "Barlow", sans-serif;
+}
+.nav-logo :link,
+.nav-logo :visited {
+  color: inherit;
+  text-decoration: none;
+}
+.nav-logo :hover,
+.nav-logo :active {
+  color: black;
+}
+.nav-links {
+  font-size: 2.4rem;
+  font-family: sans-serif;
+}
+.nav-links ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 4.8rem;
+}
+.nav-links ul a:link,
+.nav-links ul a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+.nav-links ul a:hover,
+.nav-links ul a:active {
+  color: inherit;
+  text-decoration: none;
+  color: aqua;
+}
+.nav-links ul li:last-child a {
+  display: block;
+  color: black;
+  font-weight: bold;
+  background-color: white;
+  padding: 1.2rem 2.4rem;
+  border-radius: 3.6rem;
+}
+.nav-links ul li:last-child a:link,
+.nav-links ul li:last-child a:visited {
+  text-decoration: none;
+}
+.nav-links ul li:last-child a:hover,
+.nav-links ul li:last-child a:active {
+  cursor: pointer;
+  color: white;
+  background-color: hsla(192, 73%, 84%, 0.442);
+}
+.hero-text {
+  padding-top: 10rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 4.8rem;
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  letter-spacing: 0.7rem;
+}
+.arrow-container {
+  text-align: center;
+}
+
+/*SECTION-2 INFORMATION GRID */
+/*---------------------------------------------------------------*/
+.gr-content {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  color: hsl(212, 27%, 19%);
+  padding: 12.8rem 12.8rem;
+  gap: 3.6rem;
+}
+.gr-header {
+  font-size: 4.8rem;
+  font-family: "Fraunces", serif;
+  font-weight: bolder;
+  letter-spacing: -2px;
+}
+.gr-info {
+  font-size: 2rem;
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+}
+.gr-link a {
+  font-family: "Fraunces", serif;
+  font-size: 3rem;
+  font-weight: 600;
+  text-decoration: underline solid hsl(51, 100%, 49%) 20%;
+}
+.gr-image img {
+  width: 100%;
+}
+
+.gr-link a:link,
+.gr-link a:visited {
+}
+.gr-link a:hover,
+.gr-link a:active {
+  cursor: pointer;
+}
+
+.gr4-content-1 {
+  background-image: url(./images/desktop/image-graphic-design.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.gr4-content-2 {
+  background-image: url(./images/desktop/image-photography.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.gr4-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  margin-top: 50%;
+  gap: 1rem;
+  padding: 0 20%;
+}
+.gr4-header {
+  font-size: 3rem;
+  font-family: "Fraunces", serif;
+  color: hsl(167, 40%, 24%);
+}
+.gr4-info {
+  font-size: 1.8rem;
+  font-family: "Barlow", serif;
+  text-align: center;
+  color: hsl(168, 34%, 41%);
+  font-weight: 500;
+  padding-bottom: 5rem;
+}
+
+/*SECTION-3 INFORMATION GRID */
+/*---------------------------------------------------------------*/
+/* .testimonials {
+} */
+.test-header {
+  padding-top: 8%;
+  margin-bottom: 10rem;
+  text-align: center;
+  font-size: 3rem;
+  font-family: "Fraunces", serif;
+  text-transform: uppercase;
+  color: hsl(210, 4%, 67%);
+  letter-spacing: 2px;
+}
+.review-wrap {
+  min-height: 60rem;
+
+  padding: 0 10rem;
+}
+.reviews {
+  display: flex;
+  flex-direction: column;
+  column-gap: 1rem;
+  padding-bottom: 10rem;
+
+  /* padding: 0 8rem; */
+  align-items: center;
+}
+.reviewer-img {
+  border-radius: 50%;
+  width: 8rem;
+  margin-bottom: 5rem;
+}
+.reviewer-cmnt {
+  color: hsl(213, 9%, 39%);
+  font-size: 2.4rem;
+  font-family: "Barlow", serif;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 5rem;
+  padding: 0 3rem;
+}
+.reviewer-name {
+  font-size: 3rem;
+  font-family: "Fraunces", serif;
+  margin-bottom: 1rem;
+}
+.reviewer-desig {
+  color: hsl(210, 4%, 67%);
+  font-family: "Barlow", serif;
+  font-weight: 500;
+  font-size: 2.2rem;
+}
+
+/*SECTION-4 Gallery */
+/*---------------------------------------------------------------*/
+.gallery {
+  display: flex;
+  min-width: inherit;
+  background-color: aqua;
+}
+.gallery-img {
+  max-width: 100%;
+}
+/*SECTION-4 Contact-links */
+/*---------------------------------------------------------------*/
+.important-links {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(136, 207, 193, 255);
+  color: hsl(168, 34%, 41%);
+  align-items: center;
+  justify-content: center;
+  min-height: 40rem;
+}
+.important-contact ul {
+  list-style: none;
+  display: flex;
+  text-align: center;
+  padding: 2rem 2rem;
+  font-size: 2.4rem;
+  font-family: "Barlow", serif;
+  font-weight: 500;
+
+  gap: 5rem;
+}
+.important-contact ul :link,
+.important-contact ul :visited {
+  text-decoration: none;
+  color: inherit;
+}
+.important-contact ul :hover,
+.important-contact ul :active {
+  color: hsl(167, 40%, 24%);
+}
+
+.important-socials {
+  display: flex;
+  gap: 5rem;
+}
+.important-socials a img {
+  filter: contrast(70%);
+}
+/* .important-socials a :link,
+.important-socials a :visited {
+} */
+.important-socials a img:hover,
+.important-socials a img:active {
+  filter: contrast(100%) brightness(110%);
+  cursor: pointer;
+}
+/*Common grid codes*/
+/*---------------------------------------------------------------*/ /*---------------------------------------------------------------*/
+.grid-2-cols {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  min-height: 60rem;
+}
+.grid-3-cols {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid-4-cols {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/

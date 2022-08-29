@@ -1,0 +1,53 @@
+@media screen and (max-width: 900px) {
+  html {
+    font-size: 50%;
+  }
+}
+@media screen and (max-width: 700px) {
+  html {
+    font-size: 40%;
+  }
+}
+@media screen and (max-width: 375px) {
+  html {
+    font-size: 35%;
+  }
+  body {
+    min-width: 37.5em;
+    width: 100vw;
+  }
+  .nav-el {
+    flex-direction: column;
+    position: absolute;
+    padding-top: 10rem;
+    color: black;
+    left: 0;
+    top: 60px;
+    opacity: 1;
+    background-color: aliceblue;
+    width: 100vw;
+    height: 100vh;
+    z-index: 2;
+    transform: translateX(100%);
+  }
+  .open {
+    transform: translateX(0%);
+  }
+
+  .mobile-mode {
+    display: block;
+  }
+
+  .info-grid {
+    min-width: 37.5rem;
+  }
+  .grid-2-cols,
+  .grid-3-cols {
+    grid-template-columns: 1fr;
+    min-width: auto;
+    min-height: auto;
+  }
+  .grid-4-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
